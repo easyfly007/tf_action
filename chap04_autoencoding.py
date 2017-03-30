@@ -63,7 +63,7 @@ class AdditiveGaussianNoiseAutoencoder(object):
 	def getbiases(self):
 		return self.sess.run(self.weights['b1'])
 
-mnist = input_data.read_data_sets('MNIST_data', one_hot = True)
+mnist = input_data.read_data_sets('../MNIST_data', one_hot = True)
 
 
 def standard_scale(x_train, x_test):
